@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>من نحن | مؤسسة الشاكرين العالمية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Icons & AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Tahoma, Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.8;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #0a3d62;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header img {
+      height: 90px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #dfe6e9;
+    }
+
+    /* ===== Page Title ===== */
+    .page-title {
+      background: linear-gradient(rgba(10,61,98,0.9), rgba(10,61,98,0.9));
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .page-title h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .page-title p {
+      font-size: 17px;
+      font-weight: bold;
+      color: #dcdde1;
+    }
+
+    /* ===== Content ===== */
+    .content {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+      background: #fff;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .content-text h2 {
+      color: #0a3d62;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .content-text p {
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    /* إطار أنيق للصورة */
+   .content-image img {
+    width: 100%;
+    max-width: 480px;          /* حجم الصورة */
+    height: auto;
+    padding: 0px;             /* المسافة داخل الإطار */
+    background: #ffffff;       /* لون خلفية الإطار */
+    border-radius: 18px;       /* نعومة الحواف */
+    border: 2px solid #0a3d62; /* لون الإطار (أزرق الهوية) */
+    box-shadow: 
+    0 10px 25px rgba(0,0,0,0.15),
+    inset 0 0 0 1px #e6e6e6; /* لمسة فاخرة */
+   }
+
+    /* ===== Values ===== */
+    .values {
+      background: #eef1f4;
+      padding: 70px 20px;
+    }
+
+    .values h2 {
+      text-align: center;
+      color: #0a3d62;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    .values-cards {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .value-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .value-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .value-card i {
+      font-size: 30px;
+      color: #0a3d62;
+      margin-bottom: 15px;
+    }
+
+    .value-card h3 {
+      color: #0a3d62;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0a3d62;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+     /* ===== WhatsApp ===== */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #25D366;
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width: 900px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="مؤسسة الشاكرين العالمية">
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">من نحن</a>
+    <a href="services.html">خدماتنا</a>
+    <a href="projects.html">مشاريعنا</a>
+    <a href="contact.html">تواصل معنا</a>
+  </nav>
+</header>
+
+<!-- Page Title -->
+<section class="page-title">
+  <h1>من نحن</h1>
+  <p>تعرف على مؤسسة الشاكرين العالمية</p>
+</section>
+
+<!-- Content -->
+<section class="content">
+  <div class="content-grid">
+    <div class="content-text" data-aos="fade-right">
+      <h2>نبذة عن المؤسسة</h2>
+      <p>
+        مؤسسة الشاكرين العالمية هي مؤسسة متخصصة في مجال المصاعد والسلالم
+        الكهربائية، تقدم حلولًا متكاملة تشمل توفير قطع الغيار الاصلية و التوريد والتركيب والصيانة.
+      </p>
+      <p>
+        نعمل وفق أعلى معايير الجودة والسلامة، مع الالتزام بالتطوير المستمر
+        ومواكبة أحدث التقنيات العالمية.
+      </p>
+    </div>
+
+    <div class="content-image" data-aos="fade-left">
+     <img src="images/content-image.png" alt="مؤسسة الشاكرين العالمية">
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="values">
+  <h2>قيمنا</h2>
+  <div class="values-cards">
+    <div class="value-card" data-aos="fade-up">
+      <i class="fas fa-shield-alt"></i>
+      <h3>الجودة</h3>
+      <p>نلتزم بأعلى معايير الجودة في جميع أعمالنا.</p>
+    </div>
+
+    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+      <i class="fas fa-user-check"></i>
+      <h3>المصداقية</h3>
+      <p>نبني علاقات طويلة الأمد مع عملائنا.</p>
+    </div>
+
+    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+      <i class="fas fa-cogs"></i>
+      <h3>الاحترافية</h3>
+      <p>فريق عمل مؤهل وخبرة عملية متميزة.</p>
+    </div>
+  </div>
+</section>
+  
+   <a href="https://wa.me/00966508771110" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+   </a>
+
+<footer>
+  © 2026 مؤسسة الشاكرين العالمية للمصاعد والسلالم الكهربائية
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
