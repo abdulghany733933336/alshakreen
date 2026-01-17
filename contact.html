@@ -19,6 +19,56 @@
     }
 
     /* ===== Header ===== */
+
+header {
+  background: #0a3d62;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* موبايل */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: #0a3d62;
+    margin-top: 15px;
+  }
+
+  nav a {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
     header {
       background: #0a3d62;
       color: #fff;
@@ -92,6 +142,25 @@
       object-fit: cover;
     }
 
+
+/* يجعل الصفحة مرنة */
+* {
+  box-sizing: border-box;
+}
+
+/* الصور تتجاوب */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* خط مناسب للجوال */
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+
     .project-content {
       padding: 25px;
     }
@@ -142,7 +211,25 @@
 
     .email-link:hover {
       text-decoration: underline;
-     }
+    }
+
+    .location-card i {
+      font-size: 40px;
+      color: #e74c3c;
+      margin-bottom: 15px;
+    }
+
+    .location-card a {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #0a3d62;
+      text-decoration: none;
+    }
+
+    .location-card a:hover {
+      text-decoration: underline;
+    }
 
     /* ===== Footer ===== */
     footer {
@@ -160,20 +247,35 @@
     }
   </style>
 </head>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+  }
+
+  function closeMenu() {
+    document.getElementById("mobileMenu").classList.remove("active");
+  }
+</script>
+
 <body>
 
 <header>
   <img src="images/logo.png" alt="مؤسسة الشاكرين العالمية">
-  <nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">من نحن</a>
-    <a href="services.html">خدماتنا</a>
-    <a href="projects.html">مشاريعنا</a>
-    <a href="social.html">التواصل الاجتماعي</a>
-    <a href="contact.html">تواصل معنا</a>
+
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <nav id="mobileMenu">
+    <a href="index.html" onclick="closeMenu()">الرئيسية</a>
+    <a href="about.html" onclick="closeMenu()">من نحن</a>
+    <a href="services.html" onclick="closeMenu()">خدماتنا</a>
+    <a href="projects.html" onclick="closeMenu()">مشاريعنا</a>
+    <a href="social.html" onclick="closeMenu()">التواصل الاجتماعي</a>
+    <a href="contact.html" onclick="closeMenu()">تواصل معنا</a>
   </nav>
 </header>
-
 <!-- Page Title -->
 <section class="page-title">
   <h1>للتواصل بنا</h1>
@@ -194,7 +296,6 @@
      </p>
     </div>
   </div>
-
   <div class="project-card" data-aos="fade-up" data-aos-delay="100">
     <img src="images/project4.jpg" alt="راسلنا على الايميل الخاص بالمؤسسة">
     <div class="project-content">
@@ -206,6 +307,22 @@
       </p>
     </div>
   </div>
+
+   <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+     <img src="images/project4.jpg" alt="الموقع الخاص بنا">
+     <div class="project-content">
+     
+     <h3>موقعنا</h3>
+     <p>صنعاء – الجمهورية اليمنية</p>
+   <a href="https://www.google.com/maps/search/?api=1&query=Sanaa,Yemen" 
+     target="_blank">
+     عرض الموقع على الخريطة
+    <i class="fas fa-location-dot"></i>
+  </a>
+    </div>
+  </div>
+
+
 
 </section>
 
@@ -223,5 +340,4 @@
 </script>
 
 </body>
-
 </html>
